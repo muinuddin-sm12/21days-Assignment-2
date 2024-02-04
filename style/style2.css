@@ -150,10 +150,8 @@ h2 {
   .seat {
     gap: 90px;
   }
+  .box {
+    padding: 18px;
+  }
 }
 
-/* @media screen and (max-width: 1380px){
-  .seat {
-    gap: 50px;
-  }
-} */
