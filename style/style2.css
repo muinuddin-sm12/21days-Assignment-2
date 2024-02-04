@@ -115,6 +115,23 @@ h2 {
   cursor: pointer;
   color: #333;
 }
+.seat {
+  color:#585859;
+  font-weight: 500;
+  display: flex;
+  gap: 9vw;
+  margin-top: 16px;
+}
+.seat-date{
+  display: flex;
+  gap: 5px;
+  justify-items: center;
+}
+.seat-count {
+  display: flex;
+  gap: 5px;
+  justify-items: center;
+}
 
 @media screen and (max-width: 667px) {
   #root {
@@ -130,4 +147,13 @@ h2 {
   .sidebar {
     width: 100%;
   }
+  .seat {
+    gap: 90px;
+  }
 }
+
+/* @media screen and (max-width: 1380px){
+  .seat {
+    gap: 50px;
+  }
+} */

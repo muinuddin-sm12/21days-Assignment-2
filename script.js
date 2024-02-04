@@ -47,12 +47,15 @@ document.getElementById('root').innerHTML = categories.map((item)=>
             <div class='img-box'>
                 <img class='images' src=${image}></img>
             </div>
-        <div class='bottom'>
-        <p>${title}</p>
-        <h2>${price} Tk</h2>`+
-        "<button class='btn' onclick='addtocart("+(i++)+")'>Buy Courses</button>"+
-        `</div>
-        
+            <div class='bottom'>
+                <p>${title}</p>
+                <h2>${price} Tk</h2>`+
+                "<button class='btn' onclick='addtocart("+(i++)+"); countClicks()'>Buy Courses</button>"+
+            `</div>
+            <div class="seat">
+                <div class='seat-date'><i class="fa-regular fa-calendar-days"></i> <p>Start 20 April, 2021</p></div>
+                <div class='seat-count'><i class="fa-regular fa-user"></i> <p id="output">60</p></div>
+            </div>
         </div>`
     )
 }).join('')
@@ -67,6 +70,13 @@ function delElement(a){
     cart.splice(a, 1);
     displaycart();
 }
+
+function countClicks() {
+    var paragraph = document.getElementById("output");
+    var currentValue = parseInt(paragraph.innerHTML);
+    var newValue = currentValue - 1;
+    paragraph.innerHTML = newValue;
+  }
 
 function displaycart(){
     let j = 0, total=0;
@@ -95,3 +105,5 @@ function displaycart(){
 
     
 }
+
+
