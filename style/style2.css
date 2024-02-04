@@ -43,27 +43,6 @@ body {
   gap: 30px;
   margin-bottom: 30px;
 }
-#root {
-  width: 67%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 30px;
-  margin-bottom: 30px;
-}
-.sidebar {
-  width: 33%;
-  border-radius: 16px;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  padding: 15px;
-  text-align: center;
-}
-.foot {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0px;
-  padding: 10px 0px;
-  border-top: 1px solid #a4a4a4;
-}
 .box {
   display: flex;
   flex-direction: column;
@@ -137,7 +116,7 @@ h2 {
   color: #333;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 667px) {
   #root {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
