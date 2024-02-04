@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 html,body {
@@ -37,7 +38,7 @@ html,body {
   }
   .container{
     display: flex;
-    width: 80%;
+    width: 100%;
     gap: 30px;
     margin-bottom: 30px;
   }
@@ -117,19 +118,22 @@ html,body {
     justify-content: space-between;
     padding: 10px;
     background-color: white;
-    border-bottom: 1px solid #aaa;
-    border-radius: 3px;
+    border-radius: 20px;
     margin: 10px 10px;
   }
   .row-img{
-    width: 50px;
-    height: 50px;
+    /* width: 60px; */
+    /* height: 60px; */
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+  .rowimg{
+    height: 50px;
+    width: 60px;
+    border-radius: 8px;
+  }
   .fa-x:hover{
     cursor: pointer;
     color: #333;
