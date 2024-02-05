@@ -18,11 +18,12 @@ body {
 .cart {
   display: flex;
   background-color: white;
+  border: .5px solid rgb(205, 205, 205);
   justify-content: space-between;
   align-items: center;
   padding: 7px 10px;
   border-radius: 3px;
-  width: 80px;
+  width: 70px;
 }
 .fa-solid {
   color: #21b573;
@@ -118,19 +119,23 @@ h2 {
 .seat {
   color:#585859;
   font-weight: 500;
+  width: 100%;
   display: flex;
-  gap: 9vw;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 16px;
 }
 .seat-date{
   display: flex;
   gap: 5px;
-  justify-items: center;
+  align-items: center;
+  justify-content: flex-start ;
 }
 .seat-count {
   display: flex;
   gap: 5px;
-  justify-items: center;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 @media screen and (max-width: 667px) {
@@ -146,9 +151,6 @@ h2 {
   }
   .sidebar {
     width: 100%;
-  }
-  .seat {
-    gap: 90px;
   }
   .box {
     padding: 18px;

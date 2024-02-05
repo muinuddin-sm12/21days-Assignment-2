@@ -54,7 +54,7 @@ document.getElementById('root').innerHTML = categories.map((item)=>
             `</div>
             <div class="seat">
                 <div class='seat-date'><i class="fa-regular fa-calendar-days"></i> <p>Start 20 April, 2021</p></div>
-                <div class='seat-count'><i class="fa-regular fa-user"></i> <p id="output">60</p></div>
+                <div class='seat-count'><i class="fa-regular fa-user"></i> <p id="output">60 seats</p></div>
             </div>
         </div>`
     )
